@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+   <link href="ionic/css/ionic.min.css" rel="stylesheet">
+    <title>Home Switch</title>
+
+    <style>
+      @media (min-width: 520px) {
+        .ct {
+          width: 520px;
+        margin-left: auto ;
+        margin-right: auto ;
+        }
+      }
+        .buttongroup {
+        float: right;
+        }
+        .padding {
+         margin-top: 40px;
+        }
+    </style>
+
+    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
+         so we use a script file. -->
+    <script src="app.js" defer></script>
+
+  </head>
+
+ <body>
+  <div class="ct bar bar-header bar-positive">
+    <h1 class="title">
+      Home Switch
+    </h1>
+  </div>
+  
+  <div class="ct ion-content has-header has-footer">
+	<div class="padding">
+    <ul class="list">
+      <li class="item item-toggle">
+        Light 1
+        <label class="toggle toggle-positive">
+          <input type="checkbox" id="device1" data-device="1">
+          <div class="track">
+            <div class="handle">
+            </div>
+          </div>
+        </label>
+      </li>
+      <li class="item item-toggle">
+        Light 2
+        <label class="toggle toggle-positive">
+          <input type="checkbox" id="device2" data-device="2">
+          <div class="track">
+            <div class="handle">
+            </div>
+          </div>
+        </label>
+      </li>
+      <li class="item item-toggle">
+        Light 3
+        <label class="toggle toggle-positive">
+          <input type="checkbox" id="device3" data-device="3">
+          <div class="track">
+            <div class="handle">
+            </div>
+          </div>
+        </label>
+      </li>
+      
+      <li class="item item-toggle">
+        Light 4
+        <label class="toggle toggle-positive">
+          <input type="checkbox" id="device4" data-device="4">
+          <div class="track">
+            <div class="handle">
+            </div>
+          </div>
+        </label>
+      </li>
+      
+      <li class="item">
+        Blinds 1
+		<div class="buttongroup">
+			<button class="button button-positive" data-device="6" data-value="on">Down</button>
+			<button class="button button-positive" data-device="6" data-value="off">Up</button>
+		</div>
+      </li>
+      
+      <li class="item">
+        Blinds 2
+		<div class="buttongroup">
+			<button class="button button-positive" data-device="7" data-value="on">Down</button>
+			<button class="button button-positive" data-device="7" data-value="off">Up</button>
+		</div>
+      </li>
+      
+      <li class="item item-toggle">
+        Automatic
+        <label class="toggle toggle-positive">
+          <input type="checkbox" id="auto" data-device="auto">
+          <div class="track">
+            <div class="handle">
+            </div>
+          </div>
+        </label>
+      </li>
+	 
+	</ul>
+  </div>
+  </div>
+  <div class="ct bar bar-footer bar-positive">
+    <div id="ftr" class="title">
+    </div>
+  </div>
+  
+
+</body>
+
+</html>
